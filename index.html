@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Mazhar Ul Haq - Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+            background-color: #ffffff; /* Set background color for section */
+            color: #333; /* Set text color for better visibility */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Syed Mazhar Ul Haq</h1>
+        <p>Welcome to My Introduction Website</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello, I'm Syed Mazhar Ul Haq. I enjoy the simple pleasure of walking alone. 
+            Currently, I work as a Customer Support Associate at Amazon.
+        </p>
+
+        <h2>My Interests</h2>
+        <p>
+            Some of my interests include walking, exploring new places, and [add more interests if you'd like].
+        </p>
+
+        <h2>Contact Information</h2>
+        <p>
+            You can reach me at: <a href="mailto:syedmazharulhaq618@gmail.com">syedmazharulhaq618@gmail.com</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Syed Mazhar Ul Haq</p>
+    </footer>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            var scrollPosition = window.scrollY;
+            var header = document.querySelector("header");
+            var body = document.body;
+
+            if (scrollPosition > 50) {
+                body.style.backgroundColor = "#d3b8ff"; /* Change to light purple */
+                header.style.animation = "none"; /* Disable header animation when scrolled */
+            } else {
+                body.style.backgroundColor = "#f2f2f2"; /* Default background color */
+                header.style.animation = "fadeIn 1.5s ease-out"; /* Enable header animation when at the top */
+            }
+        });
+    </script>
+
+</body>
+</html>
